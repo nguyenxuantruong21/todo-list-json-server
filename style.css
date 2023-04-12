@@ -1,0 +1,91 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(to right, rgb(67, 197, 180),rgb(201, 204, 172));
+  height: 100vh;
+}
+
+.container{
+  width: 600px;
+  /* height: 600px; */
+  background: linear-gradient(to right, rgb(16, 194, 238),rgb(217, 218, 210));
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 5px 60px rgba(0, 0, 0, 0.5);
+}
+
+.title{
+  font-size: 35px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  height: 90px;
+  padding: 10px;
+}
+
+.form input{
+  outline: none;
+  width: 90%;
+  border: none;
+  font-size: 24px;
+  color: #444;
+  padding: 0 24px;
+  background-color: rgb(241, 239, 236);
+  height: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.form button{
+  width: 60px;
+  border-radius: 5px;
+  font-size: 60px;
+  background: linear-gradient(to right, rgb(13, 133, 212),rgb(120, 167, 211));
+  cursor: pointer;
+  border: none;
+}
+
+.form button a{
+  color:white
+}
+
+.todos ul li{
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  font-size: 25px;
+  color: black;
+  cursor: pointer;
+  background: linear-gradient(to right, rgb(171, 201, 221),rgb(191, 194, 166));
+  margin: 10px;
+}
+
+.counter{
+  margin: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.todos ul li p{
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todos ul li.completed{
+  text-decoration: line-through;
+  color: #aaa;
+}
+
